@@ -4,7 +4,7 @@
   <?php //print_r($sliders);
 
 foreach($sliders as $key=>$val){  ?>
-  <div class="ms-slide"><img src="<?php echo FRONT_END_LAYOUT ?>/assets/img/blank.gif" alt="Image description" data-src="/../assets/files/<?php echo $val['pic']; ?>">
+  <div class="ms-slide"><img src="<?php echo FRONT_END_LAYOUT ?>/assets/img/blank.gif" alt="Image description" data-src="<?php echo base_url ?>/../assets/files/<?php echo $val['pic']; ?>">
     <div class="ms-layer u-ribbon-v1 text-uppercase g-pos-rel g-line-height-1_2 g-font-weight-700 g-font-size-16 g-font-size-18--md g-color-white g-theme-bg-black-v1 g-pa-10 g-mb-10" data-type="text" data-delay="10" data-effect="skewleft(50, 340)" data-ease="easeOutExpo" data-duration="2200">Only From <span class="g-color-primary"><?php echo $val['text_above_title']; ?></span> </div>
     <h3 class="ms-layer text-uppercase g-pos-rel g-line-height-1 g-font-weight-700 g-font-size-35 g-font-secondary g-color-white g-mb-10" data-type="text" data-delay="10" data-effect="skewright(50, 340)" data-ease="easeOutExpo" data-duration="2200"><?php echo $val['title']; ?></h3>
     <div class="ms-layer g-pos-rel g-line-height-1_2 g-max-width-550 ms-hover-active" style="margin: 0px; padding: 0px; font-size: 13.49px; line-height: 15.4171px; display: none;">

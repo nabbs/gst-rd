@@ -1227,7 +1227,7 @@ text-align: right;
          padding: 2px;
     }
 	  .copyRight .list-inline {
-         float: right;
+         float: left;
          width: auto;
          text-align: left;
          margin-bottom: 0;
