@@ -1,0 +1,110 @@
+[17-Jun-2015 10:07:14 America/Chicago] PHP Warning:  Unterminated comment starting line 57 in /home/neocrews/public_html/prolifter_new/application/backend/controllers/login.php on line 57
+[17-Jun-2015 10:07:14 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/neocrews/public_html/prolifter_new/application/backend/controllers/login.php on line 65
+[15-Jan-2016 22:56:28 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 22:56:28 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:00:41 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:00:41 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:00:44 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:00:44 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:01:55 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:01:55 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:31 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:31 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:33 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:33 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:46 UTC] PHP Warning:  require_once(../Mandrill.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/admin/index.php on line 23
+[15-Jan-2016 23:04:46 UTC] PHP Fatal error:  require_once(): Failed opening required '../Mandrill.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/easycashcode/public_html/admin/index.php on line 23
+[16-Jan-2016 19:36:05 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/easycashcode/public_html/admin/drop.php on line 21
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:16:44 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:16:54 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:16:56 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:22:53 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:22:56 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:22:57 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:22:58 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:25:43 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 2
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 3
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 4
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 5
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/development/application/backend/config/variables.php on line 6
+[21-Jun-2016 08:33:44 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/development/system/core/Common.php on line 257
+[21-Nov-2016 03:41:05 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:05 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:09 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:09 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:10 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:10 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:13 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:13 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:47 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:47 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:50 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:41:50 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:25 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:25 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:27 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:27 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:27 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:42:27 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:12 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:12 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:15 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:15 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:41 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:43:41 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:44:53 US/Eastern] PHP Warning:  require_once(Mandrill/Templates.php): failed to open stream: No such file or directory in /home/easycashcode/public_html/Mandrill.php on line 3
+[21-Nov-2016 03:44:53 US/Eastern] PHP Fatal error:  require_once(): Failed opening required 'Mandrill/Templates.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/easycashcode/public_html/Mandrill.php on line 3
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Constant BASEURL already defined in /home/easycashcode/public_html/application/backend/config/variables.php on line 2
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Constant THEME_URL already defined in /home/easycashcode/public_html/application/backend/config/variables.php on line 3
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Constant FRONT_BASE_URL already defined in /home/easycashcode/public_html/application/backend/config/variables.php on line 4
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Undefined index: replacement_commission in /home/easycashcode/public_html/application/backend/config/variables.php on line 5
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Undefined index: advance_commission in /home/easycashcode/public_html/application/backend/config/variables.php on line 6
+[30-Nov-2016 07:44:06 US/Eastern] PHP Notice:  Only variable references should be returned by reference in /home/easycashcode/public_html/system/core/Common.php on line 257
+[30-Nov-2016 07:44:06 US/Eastern] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/easycashcode/public_html/application/backend/controllers/users.php on line 103

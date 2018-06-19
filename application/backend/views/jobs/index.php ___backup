@@ -1,0 +1,336 @@
+<style>
+	#drop{
+		background: white;
+		border: 1px solid gray;
+		width: 167px;
+	}
+	#searchdrop{
+		background: white;
+        border: 1px solid gray;
+        width: 67px;
+	}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{    padding: 5px;}
+	</style>
+<div class="page-content">
+    <div class ="col-md-12">
+    <div class="row">
+       <div class="col-sm-8 col-xs-8">
+         <h3 class="page-title"> 
+            <?php echo ucfirst($master_title); ?>
+        </h3>
+        </div>
+        <div class=" col-sm-4 col-xs-4">
+          <a class="btn_reload" href="<?php echo BASEURL; ?>/users/" id="user_reload" title="Reload"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    
+	<form method="get" id="user_search" action="<?php echo BASEURL; ?>/users/">
+
+     <div class="row header-btn">
+		<div class="col-sm-5">
+               <a href="<?php echo BASEURL ?>" class="btn green">Go to Dashboard</a>
+	    	 	<a href="<?php echo BASEURL ?>/users/add_new_users" class="btn green" name="submit">Add New Users</a>
+			<?php
+				$getdata=$this->input->get();
+				foreach($getdata as $key=>$val){
+					$qstring.="&".$key."=".$val;
+				}
+			?>
+			<?php echo '<a href="'.BASEURL.'/users/outputCSV/?'.$qstring.'" class="btn green">Export CSV</a>';?>
+		 </div>
+		 <div class="col-sm-7 text-right">
+			<div class="col-sm-10" style="padding: 0px;">
+					<div class="col-sm-4 col-xs-4" style="padding-left:0px;">
+						<div class="input-group date" data-provide="datepicker">
+						    <input type="text" class="form-control" name="from" placeholder="From" value="<?php echo ($this->input->get('from'))?$this->input->get('from'):'';?>">
+						    <div class="input-group-addon" style="position: relative; right: 8px;">
+							   <span class="glyphicon glyphicon-th"></span>
+						    </div>
+						</div>
+
+					</div>
+					<div class="col-sm-4 col-xs-4  col-xs"  >
+						<div class="input-group date" data-provide="datepicker">
+						    <input type="text" class="form-control" name="to" placeholder="To" value="<?php echo ($this->input->get('to'))?$this->input->get('to'):'';?>">
+						    <div class="input-group-addon" style="position: relative; right: 8px;">
+							   <span class="glyphicon glyphicon-th"></span>
+						    </div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4" style="padding-right:0px;">
+                 	 <input type="submit" id="searchdrop" class="search" value="Search" >
+                </div>	  
+						
+			</div>
+				
+				
+	    	</div>
+		 </div>
+		 <div class="gp_empty"></div> 
+		 <div class="clear"></div>
+	    	
+			
+			
+	<div class="row multisearch">
+		<div class="col-sm-12">
+			<div class="col-sm-4 col-xs">
+             <div class="form-group">
+			   <select name="subscription" id="drop" class="form-control">
+					<option value="" <?php echo ($this->input->get('subscription')=="")?'selected':'';?>>Select Subscription Type</option> 
+			  		<option value="admin" <?php echo ($this->input->get('subscription')=="admin")?'selected':'';?>>Admin Subscription</option> 
+					<option value="customer"  <?php echo ($this->input->get('subscription')=="customer")?'selected':'';?>>
+						<!--UOP SMS Pro-->Blog Subs</option> 
+					</select>
+				   <input type="submit" id="searchdrop" class="search" value="Search">
+                    <div class="clearfix"></div>
+				  </div>
+				</div>
+				 <div class="col-sm-4 col-xs">
+                  <div class="form-group">
+				    <select name="status" id="drop" class="form-control">
+				    	<option value="" <?php echo ($this->input->get('status')=="")?'selected':'';?>>Select Status</option> 
+			  	 	   <option value="active" <?php echo ($this->input->get('status')=="active")?'selected':'';?>>Active</option> 
+				 	  <option value="inactive"  <?php echo ($this->input->get('status')=="inactive")?'selected':'';?>>Inactive</option> 
+		        	</select>
+				   <input type="submit" id="searchdrop" class="search"  value="Search" >
+				   <div class="clearfix"></div>
+				  </div>
+				</div>
+			<div class="col-sm-4  col-xs text-right" style="padding: 0px;">
+				 <div class="form-group">
+					<span>  
+					<input type="text"  id="drop" name="search" class="form-control" value="<?php echo !empty($search)?$search:''; ?>" placeholder="Type Search Here" style="height: 30px;"></span>
+					<span><input type="submit" id="searchdrop" class="search"  value="Search">
+					</span>
+				
+			        <div class="clearfix"></div>
+				  </div>
+				</div>
+			
+				  </div>
+				 </div>   
+				 
+			<div class="row multisearch">
+				<div class="col-sm-4 text-right" >
+                <div class="form-group">
+				
+					<span>  
+					<input type="text"  id="drop" class="form-control" name="narrow_search" value="<?php echo ($this->input->get('narrow_search'))?trim($this->input->get('narrow_search')):'';?>" placeholder="Type Search Here" style="height: 30px;"></span>
+					<span><input type="submit" class="search" id="searchdrop" value="Search">
+					</span>
+                     <div class="clearfix"></div>
+                  </div> 
+				</div>
+				<div class="col-sm-4">
+
+				<!--<select name="price" id="drop">
+							<option value="" <?php echo ($this->input->get('price')=="")?'selected':'';?>>Select Price Range</option> 
+							<option value="0-100" <?php echo ($this->input->get('price')=="0-100")?'selected':'';?>>$0-$100</option> 
+							<option value="100-500"  <?php echo ($this->input->get('price')=="100-500")?'selected':'';?>>$100-$500</option> 
+							<option value="500-1000"  <?php echo ($this->input->get('price')=="500-1000")?'selected':'';?>>$500-$1000</option> 
+							<option value="1000-2000"  <?php echo ($this->input->get('price')=="1000-2000")?'selected':'';?>>$1000-$500</option> 
+						</select>
+					<input type="submit" id="searchdrop" value="Search" >-->
+
+					</div>
+					<div class="col-sm-4 text-right">
+                      <div class="form-group">
+						<select name="paid_by" id="drop"  class="form-control">
+							<option value="" <?php echo ($this->input->get('paid_by')=="")?'selected':'';?>>Select Default Gateway</option> 
+							<option value="Stripe" <?php echo ($this->input->get('paid_by')=="Stripe")?'selected':'';?>>Stripe</option> 
+							<option value="Paypal"  <?php echo ($this->input->get('paid_by')=="Paypal")?'selected':'';?>>Paypal</option> 
+							<option value="authorizenet"  <?php echo ($this->input->get('paid_by')=="authorizenet")?'selected':'';?>>Authorize.Net</option> 
+						</select>
+					<input type="submit" class="search" id="searchdrop" value="Search" >
+               <div class="clearfix"></div>
+			</div>
+            </div>
+		   </div>
+
+				</form>
+		 
+		
+		<!--<div class="col-sm-4 text-right">
+			
+		<form method="get" action="<?php echo BASEURL; ?>/users/">
+			 <span>  
+			 <input type="text"  id="drop" name="search" placeholder="Type Search Here"></span>
+		     <span><input type="submit" id="searchdrop" value="Search">
+			</span>
+		   </form>
+		 </div>-->
+	
+
+        <form  onsubmit="return confirm('Are You Sure To Perform This Action!')"; action='<?php echo BASEURL; ?>/users/bulkaction'  method='post'>
+        <!-- BEGIN EXAMPLE TABLE PORTLET-->
+		   
+        <div class=" box light-grey">
+		    <?php if(!empty($user_data)){?>
+						<div class="col-sm-8 gp_text_white" style=" margin-bottom: 20px; padding:0px">
+							<div class="col-sm-3"><input type="submit" id="activate" class="btn-primary" name="submit" value="Activate"></div>onaction
+							<div class="col-sm-3"><input type="submit" id="deactivate" name="submit" class="btn-primary" value="Deactivate"></div>
+							<div class="col-sm-3"><input type="submit" id="delete" name="submit" class="btn-primary"  value="Delete"></div>
+						</div>
+					<?php  } ?>
+					<div class="col-sm-4 text-right" style=" margin-bottom: 20px; padding:0px;"><span style="color:green; line-height:34px"><?php echo $msg = 
+
+    $this->session->flashdata('msg');
+
+						?></span></div>
+           <div class="portlet-body table-responsive">
+			<div class="gp_empty"></div>
+                <table class="table table-striped table-bordered table-hover table-responsive" >
+				  
+			
+                    <thead>
+                        <tr>
+					   <th class="text-center"><input class="check_all" type="checkbox" onchange="checkAll(this)" name="chk[]" /></th>
+                            <th class="text-center">First Name</th>
+                            <th class="text-center">Last Name</th>
+                            <th class="text-center">Email</th>
+                            <th class="text-center">Referrals</th>
+						<th class="text-center admin_sub">Admin Subs</th>
+						<th class="text-center user_sub">Uop sms pro</th>
+						<th class="text-center user_sub">Blog Subs</th>
+					    <th class="text-center">Total Earning</th>
+                            <th class="text-center">Status</th>
+                            
+
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <?php
+						if(!empty($user_data)){
+                        foreach ($user_data as $key => $val) {
+                            ?>
+                            <tr class="">
+						<td>
+							<?php $user_ids = $val['id']; ?>
+							<input type="checkbox" class="check_all" name="action[]" value="<?php echo $user_ids; ?>">
+						</td>
+                                <td>
+                                    <a href="<?php echo BASEURL ; ?>/users/view_profile/<?php echo $val['id'];  ?>"><b><?php echo $val['fname']; ?></b></a>
+                                </td>
+                                <td>
+                                    <?php echo $val['lname']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $val['email']; ?>                                    
+                                </td>
+								<td>
+								    <a href="<?php echo BASEURL; ?>/referrals/?username=<?php echo $val['display_name']  ?>">
+								       <span class="label label-sm label-viewall" style="color:#2B3D4C;">View referrals</span>
+								    </a>
+								</td>
+								<td class="admin_sub" id="<?php echo 'admin_'.$val['id'];?>">
+									<?php $admin_subscription = check_admin_subscription($val['id']);?>
+									<?php		
+							          if(!empty($admin_subscription['admin_sub_id']) && !empty($admin_subscription['admin_sub_id'])) {
+										?>
+										<button type="button" class="cancel_sub" id="<?php echo $val['id'];?>" style="color: blue; " ><i class="fa fa-check "  aria-hidden="true"></i></button><?php 
+										  }
+							          else{  ?>
+										<a href="<?php echo BASEURL;?>/users/subscribe_admin_sub/?user_id=<?php echo $val['id'];?>" onclick="return confirm('Are you sure you want to activate reseller subscription for this user')"><i class="fa fa-times"  aria-hidden="true"></i></a>
+									<?php  }
+									?>
+								</td>
+								<td class="user_sub" id="<?php echo'user_'.$val['id'];?>">		
+										<?php	
+					    $user_subscription = check_user_subscription($val['id']);
+
+					    if((!empty($user_subscription['user_customer_id']) && !empty($user_subscription['user_sub_id'])) || !empty($user_subscription['paypal_profile_id']) || !empty($user_subscription['authorized_sub_id']) || !empty($user_subscription['payzaa_sub_id'])){
+						    	if($user_subscription['paid_by']=="Paypal" || $user_subscription['paid_by']=="Payzaa"){
+								echo ($user_subscription['paid_by']=="Payzaa")?'Payza':$user_subscription['paid_by'];
+							}else{?>
+						    <button type="button" class="cancel_admin_sub" id="<?php echo $val['id'];?>" style="color: blue; " ><i class="fa fa-check "  aria-hidden="true"></i></button>
+						    <?php } } else{ ?>
+					    		<a href="<?php echo BASEURL;?>/users/subscribe_user_sub/?user_id=<?php echo $val['id'];?>" onclick="return confirm('Are you sure you want to activate UOP SMS Pro subscription for this user')"><i class="fa fa-times"  aria-hidden="true"></i></a>
+					    	<?php	}?>
+									
+								</td>
+						  <td>
+							   <a href="<?php echo BASEURL; ?>/subs/?username=<?php echo $val['display_name']  ?>">
+								       <span class="label label-sm label-viewall" style="color:#2B3D4C;">View Subs</span>
+							   </a>
+						</td>
+						   
+						   
+						   <td><?php echo '$'.get_earningsById($val['id']);?></td>
+								<td>      
+                                    <span class="label label-sm label-<?php echo ($val['status']==1)?'success':'default'; ?>   " style="box-shadow:1px 1px 5px black;" >
+                                        <?php echo ($val['status']==1)?'Active':'Inactive'; ?>
+                                    </span>
+                                </td>								
+
+                                <td>
+                                  <?php if($val['status']==1) { ?>
+                                  <a title="Deactivate" onclick="return confirm('Are you sure you want to deactivate the user')" href='<?php echo BASEURL; ?>/users/changeStatus/0/<?php echo $val['id']; ?>'><i class="fa fa-minus-square fa-2x" style="color:#000;"></i></a>
+                                  <?php } else if($val['status']==0 ) { ?>
+                                  <a title="Activate" onclick="return confirm('Are you sure you want to activate the user')" href='<?php echo BASEURL; ?>/users/changeStatus/1/<?php echo $val['id']; ?>'><i class="fa fa-plus-square fa-2x" style="color:#000;"></i></a>
+                                  <?php } ?>
+							  <a title="Edit"  href='<?php echo BASEURL; ?>/users/edit_users/<?php echo $val['id']; ?>' ><i class="fa fa-pencil-square fa-2x" aria-hidden="true" style="color:#000;"></i></a>
+                                  <a title="Delete" onclick="return confirm('Are you sire you want to delete the user')" href='<?php echo BASEURL; ?>/users/deleteUser/<?php echo $val['id']; ?>'><i class="fa fa-trash-o-o fa-2x" style="color:#DB4D4D;"></i></a></td>
+                            </tr>
+                        <?php }}else{ ?>
+						      <tr class="" >
+                                <td colspan="10">
+                                    <center><h3>No records found</h3></center>
+                                </td>
+								</tr>
+						
+						<?php } ?>
+                    </tbody>
+                </table>
+            </div>
+
+			<ul class="pagination" >
+				<!-- Show pagination links -->
+			<?php foreach ($str_links as $link) {			      
+				  echo "<li>".$link ."</li>";
+					} ?>
+				</ul>
+			
+        </div>
+        </form>
+        <!-- END EXAMPLE TABLE PORTLET-->
+    </div>
+</div>
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+<script type="text/javascript" src="<?php echo THEME_URL; ?>assets/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="<?php echo THEME_URL; ?>assets/plugins/data-tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="<?php echo THEME_URL; ?>assets/plugins/data-tables/DT_bootstrap.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="<?php echo THEME_URL; ?>assets/scripts/core/app.js"></script>
+<script src="<?php echo THEME_URL; ?>assets/scripts/custom/table-managed.js"></script>
+
+<script>
+	function checkAll(ele) {
+     var checkboxes = document.getElementsByClassName('check_all');
+     if (ele.checked) {
+         for (var i = 0; i < checkboxes.length; i++) {
+             if (checkboxes[i].type == 'checkbox') {
+                 checkboxes[i].checked = true;
+             }
+         }
+     } else {
+         for (var i = 0; i < checkboxes.length; i++) {
+             console.log(i)
+             if (checkboxes[i].type == 'checkbox') {
+                 checkboxes[i].checked = false;
+             }
+         }
+     }
+ }
+	
+
+	
+    jQuery(document).ready(function () {
+        App.init();
+        //TableManaged.init();
+    });
+</script>
+
+<!-- END BODY -->

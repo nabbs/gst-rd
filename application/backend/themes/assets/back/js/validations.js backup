@@ -1,0 +1,1819 @@
+$(document).ready(function () {
+	$('#form_sparkpost')
+	.formValidation({
+		   fields: {
+			   sparkpost_username: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Username'
+                            }
+                        }
+                    },
+					sparkpost_password: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Password'
+                            }
+                        }
+                    }
+		   }
+		  
+		  }).on('success.form.fv', function (e) {
+         $("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#updateprofilevalidating").html('<b style="color:red;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+	
+	
+	
+	$('#form_sendgrid')
+	.formValidation({
+		   fields: {
+			   sendgrid_username: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Username'
+                            }
+                        }
+                    },
+					sendgrid_password: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Password'
+                            }
+                        }
+                    }
+		   }
+		  
+		  }).on('success.form.fv', function (e) {
+         $("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#updateprofilevalidating").html('<b style="color:red;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+	
+	
+	
+	
+	
+	$('#form_amazon')
+	.formValidation({
+		   fields: {
+			   amazon_username: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Username'
+                            }
+                        }
+                    },
+					amazon_password: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Password'
+                            }
+                        }
+                    }
+		   }
+		  
+		  }).on('success.form.fv', function (e) {
+         $("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#updateprofilevalidating").html('<b style="color:red;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+	
+	
+	
+	
+	$('#form_mandrill')
+	.formValidation({
+		   fields: {
+			   mandrill_username: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Username'
+                            }
+                        }
+                    },
+					mandrill_password: {
+				   validators: {
+                            notEmpty: {
+                                message: 'Please enter Password'
+                            }
+                        }
+                    }
+		   }
+		  
+		  }).on('success.form.fv', function (e) {
+         $("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#updateprofilevalidating").html('<b style="color:red;">'+ result.message +'</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+	
+  
+	
+	
+	
+	$('#add_step_new')
+            .formValidation({
+                fields: {
+                    title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    video_title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					 video: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					 description: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					
+					position: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					sign_up: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					default_link:{
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					userfile: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            },
+							file: {
+							extension: 'jpeg,jpg,png',
+							type: 'image/jpeg,image/png,image/jpeg',
+							maxSize: 2097152,   
+							message: 'The selected file is not valid'
+						}
+					  }
+				  } 
+					
+				}
+            });
+	/* .on('success.form.fv', function (e) {
+	
+            $("#loader").html("<img height='60' src='" + THEME_URL + "/assets/img/loader.gif' />");
+	        e.preventDefault();
+            var $form = $(e.target);
+            var bv = $form.data('formValidation');
+			
+            $.post($form.attr('action'), $form.serialize(), function (result) {
+			
+			 if (result.result == 'success') {
+			  $("#loader").html('<b style="color:lime;">Step data has been Inserted Successfully.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader").html('<b style="color:red;">There was some error to insert step data , please try again!.</b>');	
+			 $("#loader").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');   
+	}); 
+	 */
+	 
+	
+	
+	$('#manage_steps_edit')
+            .formValidation({
+                fields: {
+                    title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    video_title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					 video: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					 description: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					
+					position: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					sign_up: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					default_link: {
+						 validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    }
+					
+				}
+            });
+/* 	.on('success.form.fv', function (e) {
+ 	
+            $("#loader").html("<img height='60' src='" + THEME_URL + "/assets/img/loader.gif' />");
+	        e.preventDefault();
+            //var $form = $(e.target);
+            //var bv = $form.data('formValidation');
+			
+             var $form    = $(e.target),
+                formData = new FormData(),
+                params   = $form.serializeArray(),
+                files    = $form.find('[name="userfile"]')[0].files;
+               $.each(files, function(i, file) {
+                formData.append('userfile-' + i, file);
+            });
+
+            $.each(params, function(i, val) {
+                formData.append(val.name, val.value);
+            });
+            $.ajax({
+                url: $form.attr('action'),
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                type: 'POST',
+                success: function(result) {
+                    //console.log(result);
+                }
+            });    
+	}) */ 
+	
+	
+	
+	
+	
+ $('#update_replacement_form')
+            .formValidation({
+                fields: {
+                    closing_company_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },					
+                    replaced_address: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    escrow_file_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },					
+                    escrow_number: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    property_address: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Property address can\'t be empty'
+                            }
+                        }
+                    },
+                city: {
+                        validators: {
+                            notEmpty: {
+                                message: 'City can\'t be empty'
+                            }
+                        }
+                    },
+                state: {
+                        validators: {
+                            notEmpty: {
+                                message: 'State can\'t be empty'
+                            }
+                        }
+                    },
+                zipcode: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Zipcode can\'t be empty'
+                            }
+                        }
+                    },					
+                    sales_price: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Sales price can\'t be empty'
+                            }
+                        }
+                    },
+                    optradio: {
+                        validators: {
+                            notEmpty: {
+                                message:'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    close_date: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Close date can\'t be empty'
+                            }
+                        }
+                    },
+                    dilligence_expire: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    contingency_sastified: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    sellers_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Sellers name can\'t be empty'
+                            }
+                        }
+                    },
+                    buyers_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Buyers name can\'t be empty'
+                            }
+                        }
+                    },
+					total_amount_requested: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Amount can\'t be empty'
+                            }
+                        }
+                    },					
+                    represent_as: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    closing_company_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Closing company name can\'t be empty'
+                            }
+                        }
+                    },
+                    escrow_company_address: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Escrow company address can\'t be empty'
+                            }
+                        }
+                    },
+                    escrow_officer: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                    escrow_officer_phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Escrow officer phone no. can\'t be empty'
+                            }
+                        }
+                    },
+                    escrow_officer_email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Escrow officer email can\'t be empty'
+                            }
+                        }
+                    },			
+                    escrow_file_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Escrow file name can\'t be empty'
+                            }
+                        }
+                    },
+            amount_requested: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },	
+                    display_fees: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    total_repayment: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    }					
+                }
+            })
+	.on('success.form.fv', function (e) {
+        $("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated the form.</b>');	
+			 $("#loader").fadeOut(2000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			 window.location.href = BASEURL + '/users/get_view_form_replacement/'+result.id+'/'+result.user_id;
+			}else if(result.result == 'error'){
+			 $("#loader").html('<b style="color:red;">There was some error updated the form , please try again!.</b>');	
+			 $("#loader").fadeOut(3000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();				
+			}
+		}, 'json'); 
+	});  
+$('#update_advance_form')
+            .formValidation({
+                fields: {
+                    fname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    lname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },					
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email can\'t be empty'
+                            }/* ,
+                            remote: {
+                                type: 'POST',
+                                url: FRONT_BASE_URL + '/users/checkemailvalidity',
+                                message: 'Email already exists in our database',
+                                delay: 1000
+                            } */
+                        }
+                    },
+                    step_one_username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                step_two_username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+                step_three_username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader1").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader1").html('<b style="color:lime;">You have sucessfully updated users profile.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader1").html('<b style="color:red;">There was some error updated  users profile , please try again!.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+ 
+ 
+ $('#change_password')
+            .formValidation({
+                fields: {
+                password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader2").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader2").html('<b style="color:lime;">You have sucessfully updated users password.</b>');	
+			 $("#loader2").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader2").html('<b style="color:red;">There was some error updated users password , please try again!.</b>');	
+			 $("#loader2").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+ 
+  
+ $('#form_update_video')
+            .formValidation({
+                fields: {
+                step_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Step name can\'t be empty'
+                            }
+                        }
+                    },
+					video_height: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Video height can\'t be empty'
+                            }
+                        }
+                    },
+					video_width: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Video width can\'t be empty'
+                            }
+                        }
+                    },					
+                video: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Video can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader").html("<img height='60' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">Video data has been Updated Successfully.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader").html('<b style="color:red;">There was some error updating Video data , please try again!.</b>');	
+			 $("#loader").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+ 
+ 
+ $('#form_edit_testimonial')
+            .formValidation({
+                fields: {
+                    testimonial_title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Testimonial Title can\'t be empty'
+                            }
+                        }
+                    },
+                    testimonial_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Testimonial Description can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#updateprofilevalidating").html("<img src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">You have sucessfully edited testimonial.</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#updateprofilevalidating").fadeIn();
+			}
+		}, 'json');
+	}); 		
+
+
+
+
+$('#form_commission_advances').formValidation({
+                fields: {
+                    heading: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Commission Advances Heading can\'t be empty'
+                            }
+                        }
+                    },
+                    firsticon_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'First icon name can\'t be empty'
+                            }
+                        }
+                    },
+					 firsticon_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'First icon link can\'t be empty'
+                            }
+                        }
+                    },
+					secondicon_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Second icon name can\'t be empty'
+                            }
+                        }
+                    },
+					secondicon_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Second icon link can\'t be empty'
+                            }
+                        }
+                    },
+					thirdicon_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Third icon name can\'t be empty'
+                            }
+                        }
+                    },
+				    thirdicon_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Third icon link can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated text for your slider.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 
+
+
+$('#form_edit_package')
+            .formValidation({
+                fields: {
+                    name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Name can\'t be empty'
+                            }
+                        }
+                    },
+                    price: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Price can\'t be empty'
+                            }
+                        }
+                    },
+                    type: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Type can\'t be empty'
+                            }
+                        }
+                    },					
+                    plan_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Description can\'t be empty'
+                            }
+                        }
+                    },					
+				    validity: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan validity text can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully added a new package .</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 	
+	
+
+  $('#form_validation')
+            .formValidation({
+                fields: {
+                    subject: {
+                        validators: {
+                            notEmpty: {
+                                message: '<font style="color:red;">Field subject can\'t be empty</font>'
+                            }
+                        }
+                    },
+                    body: {
+                        validators: {
+                            notEmpty: {
+                                message: '<font style="color:red;">Field body can\'t be empty</font>'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {
+             				 
+			 $("#loader").html('');
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated your frontend content.</b>');				 
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			/* $("#loader_msg").html('<b style="color:lime;">You have sucessfully updated your frontend content.</b>');				 
+			 $("#loader_msg").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader_msg").fadeIn();
+			 window.location.href = BASEURL + '/cms';*/
+
+			}
+		}, 'json');
+	});
+	
+	
+  $('#form_update_template_edit')
+            .formValidation({
+                fields: {
+                    template_name: {
+                        validators: {
+                            notEmpty: {
+                                message: '<font style="color:red;">Template name can\'t be empty</font>'
+                            }
+                        }
+                    }, 
+					subject: {
+                        validators: {
+                            notEmpty: {
+                                message: '<font style="color:red;">Template subject can\'t be empty</font>'
+                            }
+                        }
+                    },
+                    description: {
+                        validators: {
+                            notEmpty: {
+                                message: '<font style="color:red;">Template description can\'t be empty</font>'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+console.log(CKEDITOR);
+		for ( instance in CKEDITOR.instances ) {
+       			 CKEDITOR.instances[instance].updateElement();
+    		}
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {            				 
+			 $("#loader").html('');
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated your template.</b>');				 
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}else if(result.result == 'error'){
+				 $("#loader").html('');
+				 $("#loader").html('<b style="color:red;">Their is some error updated template , please try again ! </b>');
+				 $("#loader").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+				 $("#loader").fadeIn();
+			}
+		}, 'json');
+	});
+	
+	
+ 
+  $('#form_send_email')
+            .formValidation({
+                fields: {
+                    subject: {
+                        validators: {
+                            notEmpty: {
+                                message: ' subject can\'t be empty'
+                            }
+                        }
+                    },
+                    description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Description can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+console.log(CKEDITOR);
+		for ( instance in CKEDITOR.instances ) {
+       			 CKEDITOR.instances[instance].updateElement();
+    		}
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">Email has been sent sucessfully !</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader").html('<b style="color:red;">There was some error sending email , please try again .</b>');	
+			 $("#loader").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}else if(result.result_erorr == 'error_loop'){
+			 $("#loader").html('<b style="color:red;">There was some error sending email . Email address might not be correct, , please try again by selecting users one by one !.</b>');	
+			 $("#loader").fadeOut(15000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');
+	});  
+ 
+  $('#form_social_settings')
+            .formValidation({
+                fields: {
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email can\'t be empty'
+                            }
+                        }
+                    },
+                    phone_no: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Phone no can\'t be empty'
+                            }
+                        }
+                    },
+                    facebook_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Facebook link can\'t be empty'
+                            }
+                        }
+                    },		
+                    twitter_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Twitter link can\'t be empty'
+                            }
+                        }
+                    },
+                    address: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Address can\'t be empty'
+                            }
+                        }
+                    }					
+
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You Have Updated Sucessfully.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 
+ 
+ 
+ 
+ 
+ 
+ $('#form_new_testimonial')
+            .formValidation({
+                fields: {
+                    testimonial_title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Testimonial Title us can\'t be empty'
+                            }
+                        }
+                    },
+                    testimonial_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Testimonial Description can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">You have sucessfully added a new testimonial.</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#updateprofilevalidating").fadeIn();
+			}
+		}, 'json');
+	}); 		
+
+
+
+
+ $('#form_admin_edit_profile')
+            .formValidation({
+                fields: {
+                    first_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'First name text can\'t be empty'
+                            }
+                        }
+                    },
+				   last_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'First name text can\'t be empty'
+                            }
+                        }
+                    },
+                    display_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Display name text can\'t be empty'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email text can\'t be empty'
+                            }
+                        }
+                    },
+                    about_myself: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This coloum  can\'t be empty'
+                            }
+                        }
+                    },
+                    fb_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Facekbook link text can\'t be empty'
+                            }
+                        }
+                    },
+                    tw_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Twitter link text can\'t be empty'
+                            }
+                        }
+                    },					
+				    linked_in_link: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Linked In link text can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#updateprofilevalidating").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#updateprofilevalidating").html('<b style="color:lime;">You have sucessfully updated your profile.</b>');	
+			 $("#updateprofilevalidating").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#updateprofilevalidating").fadeIn();
+			}
+		}, 'json');
+	}); 
+ 
+ $('#form_singup_text')
+            .formValidation({
+                fields: {
+                    singup_heading: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Singup heading can\'t be empty'
+                            }
+                        }
+                    },
+				    singup_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Singup description can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated text for your slider.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 
+
+
+  $('#form_banner_text')
+            .formValidation({
+                fields: {
+                    heading: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Banner heading can\'t be empty'
+                            }
+                        }
+                    },
+				    description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Banner heading description text can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated text for your slider.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 
+	
+ $('#form_why_to_use_text')
+            .formValidation({
+                fields: {
+                    heading: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Why To Use heading can\'t be empty'
+                            }
+                        }
+                    },
+				    description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Why To Use description text can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated text for your slider.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 
+		
+	
+$('#form_new_package')
+            .formValidation({
+                fields: {
+                    name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Name can\'t be empty'
+                            }
+                        }
+                    },
+                    price: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Price can\'t be empty'
+                            }
+                        }
+                    },
+                    plan_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan Description can\'t be empty'
+                            }
+                        }
+                    },					
+				    validity: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Plan validity text can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully added a new package .</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 	
+	
+	
+
+  $('#form_mange_cms_pages')
+            .formValidation({
+                fields: {
+                    about_us: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Field About us can\'t be empty'
+                            }
+                        }
+                    },
+                    online_training: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Field Online Training can\'t be empty'
+                            }
+                        }
+                    }
+                }
+            })
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated the CMS pages.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	}); 	
+	
+ $('#form_schedule').formValidation({})
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img src='" + FRONT_LAYOUT_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {             
+			 $("#loader").html('<b style="color:lime;">You have sucessfully updated the schedule.</b>');	
+			 $("#loader").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 50px black");
+			 $("#loader").fadeIn();
+			}
+		}, 'json');
+	});
+	
+	
+	 $('#form_conversation').formValidation({})
+	.on('success.form.fv', function (e) {
+		$("#loader").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loading.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {             
+			 $("#loader").html("");
+			 $(".start_msg").fadeOut(2000).css("color","lime").css("text-shadow","0px 0px 50px black");	
+			 $(".conversation").append("<li class='right clearfix'><span class='chat-img pull-right img_two' ><img src='"+ result.image +"' style='max-height:40px;' alt='User Avatar' class='img-circle' ></span><div class='chat-body clearfix'><div class='header'><small class=' text-muted'><span class='glyphicon glyphicon-time'></span>"+result.time_ago+"</small><strong class='pull-right primary-font name_two' >"+result.display_name+"</strong></div><p class='msg_two'>"+result.msg_data['message']+"</p></div></li>");
+			}
+		}, 'json');
+	});
+	$(".form1").keypress(function(event) {
+		if (event.which == 13) {
+			event.preventDefault();
+			$("#form_conversation").submit();
+			 $(this).val('');
+		}
+	});
+
+
+       $('#add_new_users')
+            .formValidation({
+                fields: {
+                    fname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    lname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					/*display_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },*/
+							
+		            display_name: {
+				        validators: {
+					     notEmpty: {
+						message: 'Username can’t be empty.'
+					     },
+					    remote: {
+                                type: 'POST',
+                                url: BASEURL + '/users/nicknamevalidity',
+                                message: 'Username already exists in our database',
+                                delay: 1000
+                              }
+				          }
+			           },
+		
+					reference_by: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					reference_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					phone_no: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },	
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email can\'t be empty'
+                            } ,
+                            remote: {
+                                type: 'POST',
+                                url: BASEURL + '/users/checkemailvalidity',
+                                message: 'Email already exists in our database',
+                                delay: 1000
+                            } 
+                        }
+                    },
+				password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This field can\'t be empty'
+                            }
+                        }
+                    },
+				  confirmPassword: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Confirm new password can not be empty'
+                            },
+                            identical: {
+                                field: 'password',
+                                message: 'Both passwords need to be same'
+                            }
+                        }
+                    }
+              
+                   
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader1").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader1").html('<b style="color:lime;">You have sucessfully updated users profile.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader1").html('<b style="color:red;">There was some error updated  users profile , please try again!.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+ 
+
+   
+
+$('#edit_new_users')
+            .formValidation({
+                fields: {
+                    fname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    lname: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					display_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					reference_by: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					reference_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+					phone_no: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },	
+                   email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Email can\'t be empty'
+                            }
+                        }
+                    },
+				   
+				  confirmPassword: {
+                        validators: {
+                            
+                            identical: {
+                                field: 'password',
+                                message: 'Both passwords need to be same'
+                            }
+                        }
+                    }
+              
+                   
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader1").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader1").html('<b style="color:lime;">You have sucessfully updated users profile.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader1").html('<b style="color:red;">There was some error updated  users profile , please try again!.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+
+ 
+      $('#video_tutorials')
+            .formValidation({
+                fields: {
+                    title: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },
+                    discription: {
+                        validators: {
+                            notEmpty: {
+                                message: 'This feild can\'t be empty'
+                            }
+                        }
+                    },					
+                    video: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Video can\'t be empty'
+                            }/* ,
+                            remote: {
+                                type: 'POST',
+                                url: FRONT_BASE_URL + '/users/checkemailvalidity',
+                                message: 'Email already exists in our database',
+                                delay: 1000
+                            } */
+                        }
+                    }
+                    
+
+                }
+            })
+	.on('success.form.fv', function (e) {
+         $("#loader1").html("<img height='60px;' src='" + THEME_URL + "/assets/img/loader.gif' />");
+		// Prevent form submission
+		e.preventDefault();
+//         $("#loader").html('');
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the FormValidation instance	
+		var bv = $form.data('formValidation');
+
+		// Use Ajax to submit form data
+		$.post($form.attr('action'), $form.serialize(), function (result) {
+			 if (result.result == 'success') {			 
+			 $("#loader1").html('<b style="color:lime;">You have sucessfully updated users profile.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","lime").css("font-size","16px").css("text-shadow","0px 0px 40px black");
+			}else if(result.result == 'error'){
+			 $("#loader1").html('<b style="color:red;">There was some error updated  users profile , please try again!.</b>');	
+			 $("#loader1").fadeOut(5000).css("color","red").css("font-size","16px").css("text-shadow","0px 0px 40px black");				
+			}
+		}, 'json');  
+	}); 
+ 
+
+
+$(".dropdown-toggle").click(function(){
+	$(".dropdown-menu").toggle();
+});
+	
+});

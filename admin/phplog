@@ -1,0 +1,859 @@
+
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 20:53:47 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483840427
+)
+
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483840427]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 20:53:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 20:53:48 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483840427</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 20:53:48 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 20:53:48 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 20:54:01 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483840441
+)
+
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483840441]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483840441</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 20:54:01 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 20:54:11 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483840451
+)
+
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483840451]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483840451</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 20:54:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:48:56 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483843736
+)
+
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483843736]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:48:56 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:48:57 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483843736</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:48:57 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:48:57 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:49:11 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483843751
+)
+
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483843751]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:49:11 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:49:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483843751</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:49:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:49:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:54:12 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483844051
+)
+
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483844051]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483844051</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:54:12 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:54:35 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483844075
+)
+
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483844075]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483844075</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:54:35 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:54:40 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483844080
+)
+
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483844080]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483844080</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:54:40 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Sat, 07 Jan 2017 21:54:47 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32126498
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8cCH57jTa5SF
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1483844087
+)
+
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8cCH57jTa5SF]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1483844087]]></refId>
+  <subscriptionId><![CDATA[32126498]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1483844087</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Sat, 07 Jan 2017 21:54:47 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:14:24 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484856864
+)
+
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484856864]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:14:24 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:14:25 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484856864</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:14:25 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:14:25 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:21:50 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484857310
+)
+
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484857310]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:21:50 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:21:51 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484857310</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:21:51 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:21:51 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:22:00 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484857320
+)
+
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484857320]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484857320</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:22:00 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:23:36 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484857416
+)
+
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484857416]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484857416</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:23:36 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:23:46 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484857426
+)
+
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484857426]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484857426</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:23:46 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Thu, 19 Jan 2017 15:25:03 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32223995
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484857503
+)
+
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484857503]]></refId>
+  <subscriptionId><![CDATA[32223995]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484857503</refId><messages><resultCode>Error</resultCode><message><code>E00006</code><text>The API user name is invalid or not present.</text></message></messages></ARBCancelSubscriptionResponse>
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Thu, 19 Jan 2017 15:25:03 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Fri, 20 Jan 2017 05:53:44 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 4322262
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 7Q4e9cQvC
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484909624
+)
+
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[7Q4e9cQvC]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484909624]]></refId>
+  <subscriptionId><![CDATA[4322262]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Fri, 20 Jan 2017 05:53:44 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Fri, 20 Jan 2017 05:53:45 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484909624</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages></ARBCancelSubscriptionResponse>
+ Fri, 20 Jan 2017 05:53:45 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Fri, 20 Jan 2017 05:53:45 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Fri, 20 Jan 2017 09:02:13 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 4322270
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 7Q4e9cQvC
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484920933
+)
+
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[7Q4e9cQvC]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484920933]]></refId>
+  <subscriptionId><![CDATA[4322270]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484920933</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Fri, 20 Jan 2017 09:02:13 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Fri, 20 Jan 2017 09:02:42 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 4322270
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 7Q4e9cQvC
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484920962
+)
+
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[7Q4e9cQvC]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484920962]]></refId>
+  <subscriptionId><![CDATA[4322270]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484920962</refId><messages><resultCode>Error</resultCode><message><code>E00007</code><text>User authentication failed due to invalid authentication values.</text></message></messages></ARBCancelSubscriptionResponse>
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Fri, 20 Jan 2017 09:02:42 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Fri, 20 Jan 2017 09:03:16 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 4322270
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 7Q4e9cQvC
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1484920996
+)
+
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[7Q4e9cQvC]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1484920996]]></refId>
+  <subscriptionId><![CDATA[4322270]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Fri, 20 Jan 2017 09:03:16 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Fri, 20 Jan 2017 09:03:17 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1484920996</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages></ARBCancelSubscriptionResponse>
+ Fri, 20 Jan 2017 09:03:17 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Fri, 20 Jan 2017 09:03:17 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 25 Jan 2017 17:40:22 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32197620
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8mZ3L7nc
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1485384022
+)
+
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8mZ3L7nc]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1485384022]]></refId>
+  <subscriptionId><![CDATA[32197620]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 25 Jan 2017 17:40:22 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 25 Jan 2017 17:40:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1485384022</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages></ARBCancelSubscriptionResponse>
+ Wed, 25 Jan 2017 17:40:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 25 Jan 2017 17:40:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 25 Jan 2017 17:40:33 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32198378
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 4Dj6p53D56
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1485384033
+)
+
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[4Dj6p53D56]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1485384033]]></refId>
+  <subscriptionId><![CDATA[32198378]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 25 Jan 2017 17:40:33 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 25 Jan 2017 17:40:34 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1485384033</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages></ARBCancelSubscriptionResponse>
+ Wed, 25 Jan 2017 17:40:34 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 25 Jan 2017 17:40:34 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Serialization Begin
+ Wed, 01 Feb 2017 22:01:23 -0500 DEBUG : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\ARBCancelSubscriptionRequest Object
+(
+    [subscriptionId:net\authorize\api\contract\v1\ARBCancelSubscriptionRequest:private] => 32380940
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 8mZ3L7nc
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-1.9.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => ref1486004482
+)
+
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 118) - Request  Serialization End
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBCancelSubscriptionRequest xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd">
+  <merchantAuthentication>
+    <name><![CDATA[8mZ3L7nc]]></name>
+    <transactionKey>xxxx</transactionKey>
+  </merchantAuthentication>
+  <clientId><![CDATA[sdk-php-1.9.0]]></clientId>
+  <refId><![CDATA[ref1486004482]]></refId>
+  <subscriptionId><![CDATA[32380940]]></subscriptionId>
+</ARBCancelSubscriptionRequest>
+
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [_sendRequest] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿<?xml version="1.0" encoding="utf-8"?><ARBCancelSubscriptionResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd"><refId>ref1486004482</refId><messages><resultCode>Ok</resultCode><message><code>I00001</code><text>Successful.</text></message></messages></ARBCancelSubscriptionResponse>
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 128) - Response De-Serialization Begin
+ Wed, 01 Feb 2017 22:01:23 -0500 INFO : [execute] (/home/easycashcode/public_html/ecc_admin/Authorizeddotnet/vendor/authorizenet/authorizenet/lib/net/authorize/api/controller/base/ApiOperationBase.php : 130) - Response De-Serialization End

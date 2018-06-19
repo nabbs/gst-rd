@@ -1,0 +1,23 @@
+[18-Mar-2017 14:02:36 US/Eastern] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/chdrecruiters/public_html/recruiters/application/backend/models/job_application_model.php on line 23
+[20-Mar-2017 13:30:17 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 19
+[20-Mar-2017 13:31:17 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 19
+[20-Mar-2017 13:31:36 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 19
+[20-Mar-2017 13:31:53 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 19
+[20-Mar-2017 13:32:17 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 19
+[20-Mar-2017 13:34:24 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:34:55 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:34:58 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:35:34 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:35:51 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:36:38 US/Eastern] PHP Parse error:  syntax error, unexpected '{' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 20
+[20-Mar-2017 13:48:05 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 13:48:13 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 13:48:33 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 13:49:35 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 13:51:03 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 13:51:32 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 34
+[20-Mar-2017 14:02:29 US/Eastern] PHP Parse error:  syntax error, unexpected '*' in /home/chdrecruiters/public_html/recruiters/application/frontend/controllers/users.php on line 40
+[21-Oct-2017 17:26:54 Asia/Kolkata] PHP Warning:  require_once(/home/chdrecruiters/public_html/Mandrill.php): failed to open stream: No such file or directory in /home/chdrecruiters/public_html/index.php on line 38
+[21-Oct-2017 17:26:54 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'Mandrill.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/chdrecruiters/public_html/index.php on line 38
+[21-Oct-2017 17:32:45 Asia/Kolkata] PHP Warning:  require_once(Mandrill.php): failed to open stream: No such file or directory in /home/chdrecruiters/public_html/index.php on line 38
+[21-Oct-2017 17:32:45 Asia/Kolkata] PHP Fatal error:  require_once(): Failed opening required 'Mandrill.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/chdrecruiters/public_html/index.php on line 38

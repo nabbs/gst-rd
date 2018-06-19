@@ -1,0 +1,118 @@
+[28-Nov-2016 08:42:55 UTC] PHP Notice:  Undefined index: tbPOS_SurchargeAmount in /home/easycashcode/public_html/php/process.php on line 98
+[28-Nov-2016 08:42:55 UTC] PHP Notice:  Undefined index: tbPOS_PAN in /home/easycashcode/public_html/php/process.php on line 99
+[28-Nov-2016 08:42:55 UTC] PHP Fatal error:  Uncaught SoapFault exception: [HTTP] Unauthorized in /home/easycashcode/public_html/php/process.php:49
+Stack trace:
+#0 /home/easycashcode/public_html/php/process.php(49): SoapClient->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#1 [internal function]: SoapClientHMAC->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#2 /home/easycashcode/public_html/php/process.php(104): SoapClient->__call('SendAndCommit', Array)
+#3 /home/easycashcode/public_html/php/process.php(104): SoapClientHMAC->SendAndCommit(Array)
+#4 {main}
+  thrown in /home/easycashcode/public_html/php/process.php on line 49
+[28-Nov-2016 08:46:04 UTC] PHP Fatal error:  Call to undefined function php_info() in /home/easycashcode/public_html/php/process.php on line 3
+[28-Nov-2016 08:46:22 UTC] PHP Fatal error:  Call to undefined function php_info() in /home/easycashcode/public_html/php/process.php on line 3
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: ddlPOS_ExactID in /home/easycashcode/public_html/php/process.php on line 66
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: ddlPOS_Transaction_Type in /home/easycashcode/public_html/php/process.php on line 70
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Reference_No in /home/easycashcode/public_html/php/process.php on line 71
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Customer_Ref in /home/easycashcode/public_html/php/process.php on line 72
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Reference_3 in /home/easycashcode/public_html/php/process.php on line 73
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tb_Client_Email in /home/easycashcode/public_html/php/process.php on line 75
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: ddlPOS_Language in /home/easycashcode/public_html/php/process.php on line 76
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Card_Number in /home/easycashcode/public_html/php/process.php on line 77
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Month in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Year in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_CardHoldersName in /home/easycashcode/public_html/php/process.php on line 79
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Authorization_Num in /home/easycashcode/public_html/php/process.php on line 82
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Transaction_Tag in /home/easycashcode/public_html/php/process.php on line 83
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_DollarAmount in /home/easycashcode/public_html/php/process.php on line 84
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_VerificationStr1 in /home/easycashcode/public_html/php/process.php on line 85
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_ZipCode in /home/easycashcode/public_html/php/process.php on line 93
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Amount in /home/easycashcode/public_html/php/process.php on line 94
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Number in /home/easycashcode/public_html/php/process.php on line 95
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Amount in /home/easycashcode/public_html/php/process.php on line 96
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Number in /home/easycashcode/public_html/php/process.php on line 97
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_SurchargeAmount in /home/easycashcode/public_html/php/process.php on line 99
+[28-Nov-2016 08:47:00 UTC] PHP Notice:  Undefined index: tbPOS_PAN in /home/easycashcode/public_html/php/process.php on line 100
+[28-Nov-2016 08:47:00 UTC] PHP Fatal error:  Uncaught SoapFault exception: [HTTP] Unauthorized in /home/easycashcode/public_html/php/process.php:50
+Stack trace:
+#0 /home/easycashcode/public_html/php/process.php(50): SoapClient->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#1 [internal function]: SoapClientHMAC->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#2 /home/easycashcode/public_html/php/process.php(105): SoapClient->__call('SendAndCommit', Array)
+#3 /home/easycashcode/public_html/php/process.php(105): SoapClientHMAC->SendAndCommit(Array)
+#4 {main}
+  thrown in /home/easycashcode/public_html/php/process.php on line 50
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: ddlPOS_ExactID in /home/easycashcode/public_html/php/process.php on line 66
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: ddlPOS_Transaction_Type in /home/easycashcode/public_html/php/process.php on line 70
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Reference_No in /home/easycashcode/public_html/php/process.php on line 71
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Customer_Ref in /home/easycashcode/public_html/php/process.php on line 72
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Reference_3 in /home/easycashcode/public_html/php/process.php on line 73
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tb_Client_Email in /home/easycashcode/public_html/php/process.php on line 75
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: ddlPOS_Language in /home/easycashcode/public_html/php/process.php on line 76
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Card_Number in /home/easycashcode/public_html/php/process.php on line 77
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Month in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Year in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_CardHoldersName in /home/easycashcode/public_html/php/process.php on line 79
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Authorization_Num in /home/easycashcode/public_html/php/process.php on line 82
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Transaction_Tag in /home/easycashcode/public_html/php/process.php on line 83
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_DollarAmount in /home/easycashcode/public_html/php/process.php on line 84
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_VerificationStr1 in /home/easycashcode/public_html/php/process.php on line 85
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_ZipCode in /home/easycashcode/public_html/php/process.php on line 93
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Amount in /home/easycashcode/public_html/php/process.php on line 94
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Number in /home/easycashcode/public_html/php/process.php on line 95
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Amount in /home/easycashcode/public_html/php/process.php on line 96
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Number in /home/easycashcode/public_html/php/process.php on line 97
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_SurchargeAmount in /home/easycashcode/public_html/php/process.php on line 99
+[28-Nov-2016 08:47:40 UTC] PHP Notice:  Undefined index: tbPOS_PAN in /home/easycashcode/public_html/php/process.php on line 100
+[28-Nov-2016 08:47:40 UTC] PHP Fatal error:  Uncaught SoapFault exception: [HTTP] Unauthorized in /home/easycashcode/public_html/php/process.php:50
+Stack trace:
+#0 /home/easycashcode/public_html/php/process.php(50): SoapClient->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#1 [internal function]: SoapClientHMAC->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#2 /home/easycashcode/public_html/php/process.php(105): SoapClient->__call('SendAndCommit', Array)
+#3 /home/easycashcode/public_html/php/process.php(105): SoapClientHMAC->SendAndCommit(Array)
+#4 {main}
+  thrown in /home/easycashcode/public_html/php/process.php on line 50
+[28-Nov-2016 09:39:59 UTC] PHP Notice:  Undefined index: tbPOS_SurchargeAmount in /home/easycashcode/public_html/php/process.php on line 99
+[28-Nov-2016 09:39:59 UTC] PHP Notice:  Undefined index: tbPOS_PAN in /home/easycashcode/public_html/php/process.php on line 100
+[28-Nov-2016 09:40:01 UTC] PHP Fatal error:  Uncaught SoapFault exception: [HTTP] Unauthorized in /home/easycashcode/public_html/php/process.php:50
+Stack trace:
+#0 /home/easycashcode/public_html/php/process.php(50): SoapClient->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#1 [internal function]: SoapClientHMAC->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#2 /home/easycashcode/public_html/php/process.php(105): SoapClient->__call('SendAndCommit', Array)
+#3 /home/easycashcode/public_html/php/process.php(105): SoapClientHMAC->SendAndCommit(Array)
+#4 {main}
+  thrown in /home/easycashcode/public_html/php/process.php on line 50
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: ddlPOS_ExactID in /home/easycashcode/public_html/php/process.php on line 66
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: ddlPOS_Transaction_Type in /home/easycashcode/public_html/php/process.php on line 70
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Reference_No in /home/easycashcode/public_html/php/process.php on line 71
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Customer_Ref in /home/easycashcode/public_html/php/process.php on line 72
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Reference_3 in /home/easycashcode/public_html/php/process.php on line 73
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tb_Client_Email in /home/easycashcode/public_html/php/process.php on line 75
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: ddlPOS_Language in /home/easycashcode/public_html/php/process.php on line 76
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Card_Number in /home/easycashcode/public_html/php/process.php on line 77
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Month in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: ddlPOS_Expiry_Date_Year in /home/easycashcode/public_html/php/process.php on line 78
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_CardHoldersName in /home/easycashcode/public_html/php/process.php on line 79
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Authorization_Num in /home/easycashcode/public_html/php/process.php on line 82
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Transaction_Tag in /home/easycashcode/public_html/php/process.php on line 83
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_DollarAmount in /home/easycashcode/public_html/php/process.php on line 84
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_VerificationStr1 in /home/easycashcode/public_html/php/process.php on line 85
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_ZipCode in /home/easycashcode/public_html/php/process.php on line 93
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Amount in /home/easycashcode/public_html/php/process.php on line 94
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Tax1Number in /home/easycashcode/public_html/php/process.php on line 95
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Amount in /home/easycashcode/public_html/php/process.php on line 96
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_Tax2Number in /home/easycashcode/public_html/php/process.php on line 97
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_SurchargeAmount in /home/easycashcode/public_html/php/process.php on line 99
+[28-Nov-2016 09:40:25 UTC] PHP Notice:  Undefined index: tbPOS_PAN in /home/easycashcode/public_html/php/process.php on line 100
+[28-Nov-2016 09:40:25 UTC] PHP Fatal error:  Uncaught SoapFault exception: [HTTP] Unauthorized in /home/easycashcode/public_html/php/process.php:50
+Stack trace:
+#0 /home/easycashcode/public_html/php/process.php(50): SoapClient->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#1 [internal function]: SoapClientHMAC->__doRequest('<?xml version="...', 'https://api.dem...', 'http://secure2....', 1, 0)
+#2 /home/easycashcode/public_html/php/process.php(105): SoapClient->__call('SendAndCommit', Array)
+#3 /home/easycashcode/public_html/php/process.php(105): SoapClientHMAC->SendAndCommit(Array)
+#4 {main}
+  thrown in /home/easycashcode/public_html/php/process.php on line 50
+[28-Nov-2016 12:27:32 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/easycashcode/public_html/php/process.php on line 3
+[28-Nov-2016 12:27:58 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/easycashcode/public_html/php/process.php on line 3
+[28-Nov-2016 12:28:23 UTC] PHP Notice:  Undefined variable: reference_no in /home/easycashcode/public_html/php/process.php on line 16
+[28-Nov-2016 12:28:23 UTC] PHP Notice:  Undefined variable: customer_ref in /home/easycashcode/public_html/php/process.php on line 17
+[28-Nov-2016 12:28:23 UTC] PHP Fatal error:  Using $this when not in object context in /home/easycashcode/public_html/php/process.php on line 19
+[28-Nov-2016 12:29:17 UTC] PHP Fatal error:  Using $this when not in object context in /home/easycashcode/public_html/php/process.php on line 19

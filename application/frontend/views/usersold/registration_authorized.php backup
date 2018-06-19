@@ -1,0 +1,136 @@
+<style>
+	.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+   opacity: 1.65 !important;
+}
+p {
+    margin: 0 0 3px !important;
+}	
+</style>
+<div class="income-content">
+	  <div class="container">
+		 <div class="col-sm-5 income-sidebar">
+			<form id="new_registratio" action="<?php echo BASEURL; ?>/users/new_registration" method="post">
+			  <div class="col-sm-12">
+			  <div class="form-group">  
+			   <input type="hidden" name="reference_by" value="<?php echo $reference_by;?>"/>	
+			    <input type="hidden" name="reference_name" value="<?php echo $reference_name;?>"/>
+			    <input type="hidden" name="authorized_net" value="authorized_net"/>
+			   
+			 </div>
+			  </div>
+
+			 <div class="col-sm-12">
+			  <h3><i class="fa fa-check" aria-hidden="true"></i> <strong>STEP 4:</strong> Enter Payment Information</h3>
+			  </div>
+			  <div class="col-sm-8">
+			  <div class="form-group">
+			   <input type="text" class="form-control" name="credit_card_no" data-stripe="number" id="credit_card_number" placeholder="Credit Card Number" />	  
+			 </div>
+			 </div>
+			 <div class="col-sm-8">
+			  <div class="form-group">
+			   <input type="text" class="form-control" name="expiry_month_year" placeholder="Expiry month and year (YYYY-mm)" id="expiry_month_year" />	  
+			 </div>
+			 </div>
+			 
+			 <div class="col-sm-6">
+			  <div class="form-group">
+			    <img src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/payment-method-img.png" /> 
+			 </div>
+			 </div>
+			 
+			 <div class="col-sm-12">
+			   <h2>Order Summary</h2>	 
+		     </div>
+			 <div class="col-sm-12 ">
+			  <div class="form-group">
+			  <div class="member-ship">
+			   <h4 style="font-weight:bold"> Easy Cash Code Membership <Span class="price">Price: <span style="color:#d50300">$18.00</span></span></h4>
+			  </div>
+			   </div>
+			  <div class="form-group">
+			    <div class="checkbox member-ship-check">
+				<label>
+					<input type="checkbox" name="terms"/>
+					<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+					        I understand that I’m signing up for the Easy Cash Code system for a one-time fee of $18.<strong> All sales are non-refundable.</strong>  By checking this, I am agreeing to this purchase agreement.
+				</label>
+				</div>
+			  </div>
+			 
+			 </div> 
+			
+			 <div class="col-sm-12 ">
+			  <div id="registervalidating"></div>
+			  <div class="form-group">
+			   <button type="submit" class="btn btn-success btn-block" name="btn_authorized"><span id="get_access_now_icon"></span>&nbsp;Complete My Order</button>
+			  </div> 
+			  
+			  
+			   
+			  <?php 
+			   if(!empty($reference_by)){  ?>
+			 <h4 style="font-weight:bold;text-align:center;">Referred By : <?php echo $reference_name; ?></h4>
+			   <?php  } ?>
+			 </div>
+			 
+
+			</form> 
+			 
+	     </div>
+		 <div class="col-sm-7 income-right-side">
+		   <div class="col-sm-12 text-center">
+			 <img src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/income-earn.png" />   
+			</div>	
+		   <div class="testimonials">	
+			<div class="col-sm-12 heading-img">
+			 <img src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/testimonials-text-img.png"  />
+		    </div>			
+			<div class="col-sm-12">
+			 <div class="media">
+			  <a class="media-left" href="#">
+				<img class="media-object" src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/jay-img.png" >
+			  </a>
+			  <div class="media-body">				
+				 <p>“I can't believe how simple it is to earn money with the Easy Cash Code System. I was able to generate $243 in commissions my first 3 days just by sharing my referral link on Facebook.” </p>			    <h4 class="media-heading">~ Jay Hafling</h4>
+			  </div>
+			 </div>			 	
+			</div>
+			<div class="col-sm-12">
+			 <div class="media">
+			  <a class="media-left" href="#">
+				<img class="media-object" src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/Lauren-pic.png" >
+			  </a>
+			  <div class="media-body">				
+				 <p>“Being a stay at home mom, I was able to earn an extra $900 my first month. This is so much fun and now I'm able to add another revenue stream in our household.” </p>			    <h4 class="media-heading">~ Lauren Williams</h4>
+			  </div>
+			 </div>			 	
+			</div>
+			<div class="col-sm-12">
+			 <div class="media">
+			  <a class="media-left" href="#">
+				<img class="media-object" src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/yvonne-pic.png" >
+			  </a>
+			  <div class="media-body">				
+				 <p>“This system is like nothing I've ever seen in the 16 years that I've been in the home business industry. Easy Cash Code really makes it simple to build multiple income streams simultaneously! It's brilliant.” </p>			    <h4 class="media-heading">~ Yvonne Anderson</h4>
+			  </div>
+			 </div>			 	
+			</div>
+			<div class="col-sm-12">
+			 <div class="media">
+			  <a class="media-left" href="#">
+				<img class="media-object" src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/jason-pic.png" >
+			  </a>
+			  <div class="media-body">				
+				 <p>“I struggled for years in different home businesses. Now I'm earning more money than I ever have with the Easy Cash Code System. My residual income is already up to $3560 in 3 months. I'm so excited that I can't sleep lol.” </p>			    <h4 class="media-heading">~ Jason Martinez</h4>
+			  </div>
+			 </div>			 	
+			</div>
+			<div class="col-sm-12 patner" style="margin-top:15px">
+			  <img src="<?php echo FRONT_END_LAYOUT; ?>/assets/new_registration/img/safe-img.png" />	
+		   </div>
+			
+		   </div>
+		 </div>
+		 </div>
+	  </div>
