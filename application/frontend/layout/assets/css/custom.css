@@ -1227,11 +1227,16 @@ text-align: right;
          padding: 2px;
     }
 	  .copyRight .list-inline {
-         float: left;
+         float: right;
          width: auto;
          text-align: left;
          margin-bottom: 0;
     }
+
+		.footerContent .list-inline {
+			float: left!important;
+		}
+		
 }
  @media (min-width: 992px) {
      .footerContent .list-unstyled li i {
